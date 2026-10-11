@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Політика конфіденційності та умови використання Brawl Stats UA">
+<title>Brawl Stats UA — Документи</title>
+
+<style>
+:root {
+  --bg: #050505;
+  --panel: #0b0e0b;
+  --green: #00ff66;
+  --text: #f1f5f2;
+  --muted: #a2ada5;
+  --border: rgba(0,255,102,.28);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #092012 0%, var(--bg) 48%);
+  color: var(--text);
+  font: 16px/1.75 system-ui, sans-serif;
+}
+.top-line {
+  height: 3px;
+  background: var(--green);
+  box-shadow: 0 0 18px var(--green);
+}
+.container {
+  width: min(900px, calc(100% - 28px));
+  margin: auto;
+}
+header {
+  text-align: center;
+  padding: 42px 0 24px;
+}
+.logo {
+  margin: 0;
+  color: var(--green);
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px #00ff6655;
+}
+.subtitle { color: var(--muted); margin-top: 8px; }
+
+.switcher {
+  position: sticky;
+  top: 8px;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 7px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #080b08ee;
+  backdrop-filter: blur(12px);
+}
+.tab {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 13px 10px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+  transition: .2s;
+}
+.tab:hover { color: white; }
+.tab[aria-selected="true"] {
+  background: var(--green);
+  color: #001b0a;
+  box-shadow: 0 0 18px #00ff6640;
+}
+.tab:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+main {
+  padding: clamp(22px, 5vw, 42px);
+  background: linear-gradient(145deg, #101510, #080908);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  box-shadow: 0 0 30px #00ff6608;
+}
+[hidden] { display: none !important; }
+h2 {
+  color: var(--green);
+  line-height: 1.3;
+  font-size: clamp(25px, 4vw, 32px);
+}
+h3 {
+  margin-top: 28px;
+  margin-bottom: 7px;
+  color: var(--green);
+  font-size: 18px;
+}
+.updated { color: var(--muted); font-size: 14px; }
+li { padding: 2px 0; }
+a { color: var(--green); }
+.notice {
+  padding: 14px 17px;
+  margin-top: 22px;
+  border-left: 3px solid var(--green);
+  background: #00ff6610;
+  border-radius: 0 9px 9px 0;
+}
+.placeholder { color: #ffd166; }
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 28px 0 35px;
+  font-size: 14px;
+}
+footer strong { color: var(--green); }
+
+@media(max-width:520px) {
+  .container { width: calc(100% - 18px); }
+  header { padding-top: 30px; }
+  .tab { padding: 10px 5px; font-size: 13px; }
+  main { border-radius: 12px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="top-line"></div>
+
+<div class="container">
+<header>
+  <h1 class="logo">BRAWL STATS UA</h1>
+  <div class="subtitle">Документи застосунку · by Sajmatok</div>
+</header>
+
+<nav class="switcher" role="tablist" aria-label="Документи">
+  <button class="tab" id="privacy-tab" role="tab"
+    aria-selected="true" aria-controls="privacy">
+    Політика конфіденційності
+  </button>
+  <button class="tab" id="terms-tab" role="tab"
+    aria-selected="false" aria-controls="terms" tabindex="-1">
+    Умови використання
+  </button>
+</nav>
+
+<main>
+<article id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+<h2>Політика конфіденційності</h2>
+<p class="updated">Останнє оновлення: 11 жовтня 2026 року</p>
+
+<h3>1. Загальна інформація</h3>
+<p>Brawl Stats UA — неофіційний застосунок, створений Sajmatok для перегляду статистики гравців Brawl Stars. Ця політика пояснює, як інформація може оброблятися під час використання застосунку.</p>
+
+<h3>2. Які дані обробляються</h3>
+<p>Для пошуку статистики користувач може ввести ігровий тег Brawl Stars. Застосунок може обробляти цей тег, доступні ігрові дані та технічну інформацію, необхідну для мережевих запитів.</p>
+<p>Ігрова інформація може включати ім’я гравця, трофеї, дані бійців, клубну інформацію, журнал боїв та інші доступні показники. Застосунок не повинен запитувати пароль Supercell ID або код підтвердження.</p>
+
+<h3>3. Використання інформації</h3>
+<ul>
+<li>пошук гравців і відображення статистики;</li>
+<li>перегляд журналу боїв, клубів і доступних рейтингів;</li>
+<li>забезпечення мережевих функцій та діагностика помилок, якщо вона реалізована.</li>
+</ul>
+
+<h3>4. Сервери та сторонні сервіси</h3>
+<p>Для отримання статистики застосунок може використовувати API-сервер Sajmatok та зовнішні сервіси. Ігровий тег і технічні дані запиту можуть передаватися через мережу. Сервер або постачальник хостингу може обробляти технічні журнали відповідно до своєї конфігурації.</p>
+
+<h3>5. Реклама</h3>
+<p>Brawl Stats UA може показувати рекламний банер у нижній частині інтерфейсу. Якщо реклама надається стороннім провайдером, він може обробляти IP-адресу, рекламний ідентифікатор пристрою, відомості про пристрій, покази реклами та взаємодію з рекламними матеріалами — залежно від своїх технологій і налаштувань користувача.</p>
+<p>Такі дані можуть використовуватися для показу реклами, вимірювання її ефективності, запобігання шахрайству та, якщо це дозволено налаштуваннями й законодавством, персоналізації реклами.</p>
+<p><strong>Рекламний провайдер:</strong> <span class="placeholder">Google AdMod</span>.</p>
+
+<h3>6. Зберігання даних</h3>
+<p>Налаштування або інші дані можуть зберігатися локально, якщо така функція реалізована. Строк зберігання даних на сервері залежить від конфігурації API, журналів і постачальників інфраструктури. Видалення застосунку не обов’язково видаляє дані, які могли залишитися у сторонніх сервісах.</p>
+
+<h3>7. Передавання та захист даних</h3>
+<p>Ми не продаємо персональні дані користувачів. Дані можуть оброблятися постачальниками інфраструктури й реклами для роботи відповідних функцій або розкриватися у випадках, передбачених законом. Жоден спосіб передавання чи зберігання не гарантує абсолютної безпеки.</p>
+
+<h3>8. Діти та неповнолітні</h3>
+<p>Застосунок не повинен вимагати паролі, платіжні дані або зайву особисту інформацію для перегляду статистики. Використання рекламних сервісів і обробка даних неповнолітніх мають відповідати застосовному законодавству та налаштуванням відповідного сервісу.</p>
+
+<h3>9. Права користувачів</h3>
+<p>Залежно від застосовного законодавства користувач може мати право отримати інформацію про обробку даних, вимагати їх виправлення чи видалення або заперечити проти певної обробки.</p>
+
+<h3>10. Зміни та контакти</h3>
+<p>Політика може оновлюватися разом зі змінами застосунку, сервісів або законодавства.</p>
+<p><strong>Розробник:</strong> Sajmatok<br>
+<strong>Застосунок:</strong> Brawl Stats UA<br>
+<strong>Канал:</strong> https://t.me/brawl_stats_ua<br>
+<strong>Контакт:</strong> <span class="placeholder">https://t.me/sajmatok_tg</span></p>
+
+<div class="notice">
+<strong>Неофіційний статус.</strong> Brawl Stats UA — незалежний фанатський проєкт. Він не створений, не схвалений і не підтримується Supercell. Brawl Stars та пов’язані торговельні марки належать відповідним правовласникам.
+</div>
+</article>
+
+<article id="terms" role="tabpanel" aria-labelledby="terms-tab" hidden>
+<h2>Умови використання</h2>
+<p class="updated">Останнє оновлення: 11 жовтня 2026 року</p>
+
+<h3>1. Загальні положення</h3>
+<p>Ці Умови визначають правила користування Brawl Stats UA, розробленим Sajmatok. Використовуючи застосунок, користувач погоджується дотримуватися цих Умов і чинного законодавства. Якщо ви не погоджуєтеся з ними, припиніть використання застосунку.</p>
+
+<h3>2. Призначення застосунку</h3>
+<p>Brawl Stats UA призначений для перегляду й аналізу доступної статистики Brawl Stars. Залежно від версії функції можуть включати пошук гравців за тегом, перегляд трофеїв, характеристик бійців, журналу боїв, клубів, рейтингів та інших доступних ігрових показників.</p>
+
+<h3>3. Правила користування</h3>
+<ul>
+<li>використовуйте застосунок за призначенням і відповідно до закону;</li>
+<li>не намагайтеся отримати несанкціонований доступ до серверів чи інфраструктури;</li>
+<li>не перевантажуйте сервер навмисними автоматизованими запитами;</li>
+<li>не обходьте засоби захисту сторонніх сервісів;</li>
+<li>не використовуйте застосунок для шахрайства або викрадення облікових записів.</li>
+</ul>
+<p>Застосунок не призначений для читів, ботів, модифікації ігрового клієнта або втручання в роботу Brawl Stars.</p>
+
+<h3>4. Точність і доступність інформації</h3>
+<p>Статистика залежить від доступності зовнішніх джерел, API та серверної інфраструктури. Розробник не гарантує безперервну роботу сервісу, доступність статистики для кожного гравця або абсолютну точність усіх показників. Дані можуть бути застарілими чи відрізнятися від актуальних даних у грі.</p>
+
+<h3>5. Облікові записи та безпека</h3>
+<p>Brawl Stats UA не надає обліковий запис Supercell і не замінює офіційні сервіси компанії. Не передавайте застосунку паролі, коди підтвердження або інші секретні дані Supercell ID.</p>
+
+<h3>6. Інтелектуальна власність</h3>
+<p>Оригінальні елементи застосунку можуть охоронятися законом. Brawl Stars, Supercell, персонажі, логотипи та інші відповідні матеріали належать їхнім правовласникам. Використання цих матеріалів не означає передачі прав на них.</p>
+
+<h3>7. Незалежність від Supercell</h3>
+<p>Brawl Stats UA — неофіційний фанатський застосунок. Він не пов’язаний із Supercell, не схвалений нею та не є її офіційним продуктом.</p>
+<p><a href="https://supercell.com/en/fan-content-policy/" target="_blank" rel="noopener noreferrer">Політика фанатського контенту Supercell</a></p>
+
+<h3>8. Реклама</h3>
+<p>Застосунок може містити рекламний банер у нижній частині екрана. Рекламні матеріали можуть надаватися сторонніми сервісами. Розробник не обов’язково є автором реклами та не гарантує достовірність усіх тверджень у ній. Реклама не повинна маскуватися під елементи інтерфейсу застосунку.</p>
+
+<h3>9. Оновлення та припинення роботи</h3>
+<p>Розробник може змінювати функції, випускати оновлення, тимчасово обмежувати доступ або припинити підтримку застосунку. Зміни в API чи правилах сторонніх сервісів можуть впливати на функціональність.</p>
+
+<h3>10. Обмеження відповідальності</h3>
+<p>У межах, дозволених законом, застосунок надається «як є» та за наявності доступності. Розробник не гарантує відсутності помилок, перебоїв чи несумісності з певними пристроями. Ці Умови не обмежують прав споживачів або відповідальності, які не можуть бути обмежені законом.</p>
+
+<h3>11. Конфіденційність</h3>
+<p>Використання застосунку також регулюється <a href="#privacy" data-open-tab="privacy">Політикою конфіденційності</a>.</p>
+
+<h3>12. Контакти та застосовне законодавство</h3>
+<p><strong>Розробник:</strong> Sajmatok<br>
+<strong>Застосунок:</strong> Brawl Stats UA<br>
+<strong>Канал:</strong> https://t.me/brawl_stats_ua<br>
+<strong>Контакт:</strong> <span class="placeholder">https://t.me/sajmatok_tg</span></p>
+<p>Ці Умови застосовуються з урахуванням обов’язкових норм чинного законодавства. Якщо окреме положення суперечить таким нормам, це не скасовує чинності інших положень.</p>
+</article>
+</main>
+
+<footer>
+<strong>BRAWL STATS UA</strong> · by Sajmatok<br>
+Неофіційний фанатський проєкт · © <span id="year">2026</span>
+</footer>
+</div>
+
+<script>
+(() => {
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+
+  function activate(id, focus = false) {
+    tabs.forEach(tab => {
+      const active = tab.getAttribute('aria-controls') === id;
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+      if (active && focus) tab.focus();
+    });
+    panels.forEach(panel => panel.hidden = panel.id !== id);
+  }
+
+  tabs.forEach(tab => tab.addEventListener('click', () =>
+    activate(tab.getAttribute('aria-controls'))
+  ));
+
+  document.querySelector('.switcher').addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const current = tabs.findIndex(t => t.getAttribute('aria-selected') === 'true');
+    let next = current;
+    if (event.key === 'ArrowRight') next = (current + 1) % tabs.length;
+    if (event.key === 'ArrowLeft') next = (current - 1 + tabs.length) % tabs.length;
+    if (event.key === 'Home') next = 0;
+    if (event.key === 'End') next = tabs.length - 1;
+    activate(tabs[next].getAttribute('aria-controls'), true);
+  });
+
+  document.querySelectorAll('[data-open-tab]').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      activate(link.dataset.openTab);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
